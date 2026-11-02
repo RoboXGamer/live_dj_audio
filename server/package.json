@@ -1,0 +1,15 @@
+{
+    "name":  "roomtone-server",
+    "private":  true,
+    "type":  "module",
+    "scripts":  {
+                    "start":  "node index.mjs",
+                    "test":  "node --test",
+                    "dev:local":  "node local.mjs"
+                },
+    "dependencies":  {
+                         "@hono/node-server":  "^1.19.0",
+                         "hono":  "^4.9.0",
+                         "ws":  "^8.18.0"
+                     }
+}

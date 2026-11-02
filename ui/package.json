@@ -1,0 +1,43 @@
+{
+    "name": "example-fullstack",
+    "version": "0.0.0",
+    "description": "",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "start": "node --env-file-if-exists=.env dist/server/node.js",
+        "serve": "vite preview",
+        "test": "vitest",
+        "lint": "oxlint src",
+        "dev:lan": "concurrently --kill-others \"pnpm --dir ../server dev:local\" \"vite --host 0.0.0.0\""
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@solidjs/diagnostics": "^2.0.0-rc.20",
+        "@solidjs/testing-library": "^1.0.0-rc.2",
+        "@solidjs/vite-plugin": "^3.0.0-next.55",
+        "@testing-library/jest-dom": "^7.0.0",
+        "@types/node": "^26.6.6",
+        "@types/qrcode": "^1.5.6",
+        "concurrently": "^10.0.6",
+        "eslint-plugin-solid": "~0.18.1",
+        "filesystem-routing": "^0.4.2",
+        "jsdom": "^25.0.1",
+        "oxlint": "^1.90.0",
+        "playwright": "^1.64.1",
+        "typescript": "^7.0.2",
+        "vite": "^8.3.5",
+        "vite-plugin-mkcert": "^2.1.0",
+        "vitest": "^5.0.5"
+    },
+    "dependencies": {
+        "@remix-run/cookie": "^1.0.1",
+        "@solidjs/meta": "^1.0.0-next.2",
+        "@solidjs/router": "^2.0.0-next.43",
+        "@solidjs/web": "^2.0.0-rc.20",
+        "qrcode": "^1.5.4",
+        "solid-js": "^2.0.0-rc.20",
+        "valibot": "^1.5.0"
+    }
+}
